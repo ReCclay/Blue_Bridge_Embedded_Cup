@@ -1,4 +1,5 @@
 ..\output\led.o: ..\Source\led.c
+..\output\led.o: ..\Source\led.h
 ..\output\led.o: ..\Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 ..\output\led.o: ..\Library\CMSIS\CM3\CoreSupport\core_cm3.h
 ..\output\led.o: F:\KEIL4\ARM\ARMCC\Bin\..\include\stdint.h

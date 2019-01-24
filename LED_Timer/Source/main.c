@@ -16,7 +16,7 @@
 int main(void)
 {
 	LEDInit();
-	TIM2Init(10000, 7200);
+	TIM2Init(10000, 7200);//¶¨Ê±1s
 	
 	while(1)
 	{
