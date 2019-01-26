@@ -475,11 +475,6 @@
               <FilePath>..\Source\eeprom.c</FilePath>
             </File>
             <File>
-              <FileName>PWMMode.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Source\PWMMode.c</FilePath>
-            </File>
-            <File>
               <FileName>PWMMode_Advance.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Source\PWMMode_Advance.c</FilePath>
@@ -488,6 +483,11 @@
               <FileName>PWM_Compare.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Source\PWM_Compare.c</FilePath>
+            </File>
+            <File>
+              <FileName>PWMMode.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\PWMMode.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -41,8 +41,7 @@ void TIM4Init(void)
 	NVIC_TIM4Enable();
 }
 
-u32 CH1_Val,  CH2_Val;
-u32  CH1_Duty,  CH2_Duty;
+u32 CH1_Val, CH2_Val, CH1_Duty, CH2_Duty;
 
 void TIM4_PWMCompare(u32 ch1_freq, u32 ch2_freq, u32 ch1_duty, u32 ch2_duty)
 {
@@ -59,24 +58,24 @@ void TIM4_PWMCompare(u32 ch1_freq, u32 ch2_freq, u32 ch1_duty, u32 ch2_duty)
 	TIM4Init();//TIM4定时器配置
 	
 	TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_Toggle;//触发模式
-	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_Low;//输出极性低
+	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;//输出极性高
 	TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;
 	TIM_OCInitStructure.TIM_Pulse = CH1_Val;
-	//TIM_OC1PreloadConfig(TIM4, TIM_OCPreload_Enable);//预装载使能位
+	TIM_OC1PreloadConfig(TIM4, TIM_OCPreload_Disable);////预装载使能位失能
 	TIM_OC1Init( TIM4, &TIM_OCInitStructure);
 			
 	TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_Toggle;//触发模式
-	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_Low;//输出极性低
+	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;//输出极性高
 	TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;//比较输出使能
 	TIM_OCInitStructure.TIM_Pulse = CH2_Val;
-	//TIM_OC2PreloadConfig(TIM4, TIM_OCPreload_Enable);//预装载使能位;
+	TIM_OC2PreloadConfig(TIM4, TIM_OCPreload_Disable);//预装载使能位失能
 	TIM_OC2Init( TIM4, &TIM_OCInitStructure);
 	
 	TIM_SetCounter(TIM4, 0);//定时器计数值清0
 	TIM_SetCompare1(TIM4, 0);//定时器捕获比较1寄存器值清0
 	TIM_SetCompare2(TIM4, 0);//定时器捕获比较2寄存器值清0
 	
-	TIM_ClearITPendingBit(TIM4, TIM_IT_CC1|TIM_IT_CC2);//清除中断标志位 //这个也会影响极性？
+	TIM_ClearITPendingBit(TIM4, TIM_IT_CC1|TIM_IT_CC2);//清除中断标志位 
 	TIM_ITConfig(TIM4, TIM_IT_CC1|TIM_IT_CC2, ENABLE);//使能通道比较中断
 	TIM_Cmd(TIM4, ENABLE); //使能 TIM4
 }

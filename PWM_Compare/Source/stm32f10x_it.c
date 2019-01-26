@@ -143,9 +143,9 @@ void SysTick_Handler(void)
 
 void TIM2_IRQHandler(void)
 {
-	if(TIM_GetFlagStatus(TIM2, TIM_FLAG_Update))
+	if(TIM_GetITStatus(TIM2, TIM_FLAG_Update))
 	{
-		TIM_ClearFlag(TIM2, TIM_FLAG_Update);
+		TIM_ClearITPendingBit(TIM2, TIM_FLAG_Update);
 		
 		KeyScan();
 		BeepScan(2);//2ms…®√Ë

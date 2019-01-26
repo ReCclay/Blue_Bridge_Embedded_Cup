@@ -4,7 +4,7 @@
 * 作  者：CLAY
 * 版本号：v1.0.0
 * 日  期: 2019年1月26日
-* 备  注：通用定时器的输出比较 TIM4_CH1 - PB6    TIM4_CH2 - PB7
+* 备  注：输入捕获
 *         
 *******************************************************************************
 */
@@ -32,9 +32,9 @@ int main(void)
 	BeepInit();
 	TIM2Init(2000, 72);//定时2ms
 
-	TIM3_PWMInit(2000, 40, 80);
-	TIM1_PWMInit(2000, 40, 80);
-	TIM4_PWMCompare(2000, 1000, 40, 80);
+	TIM3_PWMInit(2000, 40, 80);//频率2K CH1占空比40% CH2占空比80%
+	TIM1_PWMInit(2000, 40, 80);//频率2K CH2占空比40% CH3占空比80%
+	TIM4_PWMCompare(2000, 1000, 40, 80);//CH1占空比2K 40% CH2 1K占空比80%
 	
 	while(1)
 	{	
@@ -58,6 +58,10 @@ void KeyAction(int code)
 	else if(code == 3)
 	{
 		Beep(0);
+	}
+	else if(code == 4)
+	{
+		
 	}
 }
 
