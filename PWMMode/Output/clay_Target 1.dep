@@ -1,5 +1,5 @@
 Dependencies for Project 'clay', Target 'Target 1': (DO NOT MODIFY !)
-F (..\Source\main.c)(0x5C4BCAFA)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Library\CMSIS\CM3\CoreSupport -I ..\Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\Library\STM32F10x_StdPeriph_Driver\inc -I ..\Source-IF:\KEIL4\ARM\RV31\INC-IF:\KEIL4\ARM\CMSIS\Include-IF:\KEIL4\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
+F (..\Source\main.c)(0x5C4BEB76)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Library\CMSIS\CM3\CoreSupport -I ..\Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\Library\STM32F10x_StdPeriph_Driver\inc -I ..\Source-IF:\KEIL4\ARM\RV31\INC-IF:\KEIL4\ARM\CMSIS\Include-IF:\KEIL4\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
 I (..\Source\config.h)(0x5C4AE33A)
 I (..\Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
 I (..\Library\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
@@ -38,7 +38,7 @@ I (F:\KEIL4\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (..\Source\usart.h)(0x5C4AD1E2)
 I (..\Source\i2c.h)(0x5C4AE2ED)
 I (..\Source\eeprom.h)(0x5C4AE3A1)
-I (..\Source\PWMMode.h)(0x5C4B07D4)
+I (..\Source\PWMMode.h)(0x5C4BEB6A)
 F (..\Source\stm32f10x_it.c)(0x5C4ACE5D)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Library\CMSIS\CM3\CoreSupport -I ..\Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\Library\STM32F10x_StdPeriph_Driver\inc -I ..\Source-IF:\KEIL4\ARM\RV31\INC-IF:\KEIL4\ARM\CMSIS\Include-IF:\KEIL4\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\output\stm32f10x_it.o --omf_browse ..\output\stm32f10x_it.crf --depend ..\output\stm32f10x_it.d)
 I (..\Source\stm32f10x_it.h)(0x4D99A59E)
 I (..\Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
@@ -346,8 +346,8 @@ I (..\Library\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\Library\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\Library\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
 I (..\Source\eeprom.h)(0x5C4AE3A1)
-F (..\Source\PWMMode.c)(0x5C4BCAD4)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Library\CMSIS\CM3\CoreSupport -I ..\Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\Library\STM32F10x_StdPeriph_Driver\inc -I ..\Source-IF:\KEIL4\ARM\RV31\INC-IF:\KEIL4\ARM\CMSIS\Include-IF:\KEIL4\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\output\pwmmode.o --omf_browse ..\output\pwmmode.crf --depend ..\output\pwmmode.d)
-I (..\Source\PWMMode.h)(0x5C4B07D4)
+F (..\Source\PWMMode.c)(0x5C4BEB6F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Library\CMSIS\CM3\CoreSupport -I ..\Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I ..\Library\STM32F10x_StdPeriph_Driver\inc -I ..\Source-IF:\KEIL4\ARM\RV31\INC-IF:\KEIL4\ARM\CMSIS\Include-IF:\KEIL4\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\output\pwmmode.o --omf_browse ..\output\pwmmode.crf --depend ..\output\pwmmode.d)
+I (..\Source\PWMMode.h)(0x5C4BEB6A)
 I (..\Source\config.h)(0x5C4AE33A)
 I (..\Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
 I (..\Library\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)

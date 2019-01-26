@@ -26,9 +26,12 @@ void TIM3Init(u32 arr, u8 ch1_duty, u8 ch2_duty)
 	TIM_TimeBaseInit(TIM3, &TIM_TimeBaseStructure); //初始化 TIM3
 }
 
-void TIM3_PWMInit(u32 arr, u8 ch1_duty, u8 ch2_duty)
+void TIM3_PWMInit(u32 freq, u8 ch1_duty, u8 ch2_duty)
 {
+	u32 arr;
+	
 	TIM_OCInitTypeDef TIM_OCInitStructure;
+	arr = 1000000 / freq; 
 
 	TIM3_IOInit();//TIM3通道1-PA6 TIM3通道2-PA7配置
 	TIM3Init(arr, ch1_duty, ch2_duty);//TIM3定时器配置

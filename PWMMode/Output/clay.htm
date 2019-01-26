@@ -3,9 +3,9 @@
 <title>Static Call Graph - [..\Output\clay.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\Output\clay.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Sat Jan 26 10:50:37 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Sat Jan 26 13:09:13 2019
 <BR><P>
-<H3>Maximum Stack Usage =         64 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =         72 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 __rt_entry_main &rArr; main &rArr; TIM3_PWMInit &rArr; TIM3_IOInit &rArr; GPIO_Init
 <P>
@@ -194,7 +194,7 @@ Global Symbols
 <P><STRONG><a name="[a0]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[43]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 64 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; TIM3_PWMInit &rArr; TIM3_IOInit &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -697,8 +697,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_PWMInit
 </UL>
 
-<P><STRONG><a name="[76]"></a>TIM3_PWMInit</STRONG> (Thumb, 140 bytes, Stack size 32 bytes, pwmmode.o(i.TIM3_PWMInit))
-<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = TIM3_PWMInit &rArr; TIM3_IOInit &rArr; GPIO_Init
+<P><STRONG><a name="[76]"></a>TIM3_PWMInit</STRONG> (Thumb, 150 bytes, Stack size 40 bytes, pwmmode.o(i.TIM3_PWMInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = TIM3_PWMInit &rArr; TIM3_IOInit &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Cmd
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC2PreloadConfig
@@ -801,7 +801,7 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
 <P><STRONG><a name="[44]"></a>main</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = main &rArr; TIM3_PWMInit &rArr; TIM3_IOInit &rArr; GPIO_Init
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = main &rArr; TIM3_PWMInit &rArr; TIM3_IOInit &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_PWMInit
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2Init

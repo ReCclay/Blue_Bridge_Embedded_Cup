@@ -27,10 +27,13 @@ void TIM1Init(u32 arr, u8 ch1_duty, u8 ch2_duty)
 	TIM_TimeBaseInit(TIM1, &TIM_TimeBaseStructure); //初始化 TIM1
 }
 
-void TIM1_PWMInit(u32 arr, u8 ch1_duty, u8 ch2_duty)
+void TIM1_PWMInit(u32 freq, u8 ch1_duty, u8 ch2_duty)
 {
+	u32 arr;
+	
 	TIM_OCInitTypeDef TIM_OCInitStructure;
-
+	arr = 1000000/ freq;
+	
 	TIM1_IOInit();//TIM1通道2-PA9 TIM1通道3-PA10配置
 	TIM1Init(arr, ch1_duty, ch2_duty);//TIM1定时器配置
 	

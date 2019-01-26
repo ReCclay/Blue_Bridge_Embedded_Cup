@@ -31,7 +31,7 @@ int main(void)
 	BeepInit();
 	TIM2Init(2000, 72);//¶¨Ê±2ms
 
-	TIM3_PWMInit(1000, 40, 80);
+	TIM3_PWMInit(2000, 40, 80);
 	
 	while(1)
 	{	
