@@ -40,7 +40,7 @@ void TIM3_PWMInit(u32 freq, u8 ch1_duty, u8 ch2_duty)
 	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;//输出极性高
 	TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;
 	TIM_OCInitStructure.TIM_Pulse = (arr - 1) * ch1_duty / 100;
-	TIM_OC1PreloadConfig(TIM3, TIM_OCPreload_Enable);//预装载使能位
+	//TIM_OC1PreloadConfig(TIM3, TIM_OCPreload_Enable);//预装载使能位无所谓，不影响
 	TIM_OC1Init( TIM3, &TIM_OCInitStructure);
 			
 	TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM2;//PWM2模式
@@ -48,8 +48,7 @@ void TIM3_PWMInit(u32 freq, u8 ch1_duty, u8 ch2_duty)
 	TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;//比较输出使能
 	//***(arr-1)是总的计数值，而(arr-1)*占空比是电平反转时的计数值，故控制pluse就可以控制占空比***
 	TIM_OCInitStructure.TIM_Pulse = (arr - 1) * ch2_duty / 100;
-	TIM_OC2PreloadConfig(TIM3, TIM_OCPreload_Enable);//预装载使能位
-	TIM_OC2PreloadConfig(TIM3, TIM_OCPreload_Enable);
+	//TIM_OC2PreloadConfig(TIM3, TIM_OCPreload_Enable);//预装载使能位无所谓，不影响
 	TIM_OC2Init( TIM3, &TIM_OCInitStructure);
 	//***高级定时器必须有这一句，而通用就不必了***
 	//TIM_CtrlPWMOutputs(TIM3, ENABLE);//使能PWM输出 
