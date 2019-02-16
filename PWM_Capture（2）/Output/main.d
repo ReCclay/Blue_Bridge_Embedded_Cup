@@ -30,6 +30,6 @@
 ..\output\main.o: ..\Library\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 ..\output\main.o: ..\Library\STM32F10x_StdPeriph_Driver\inc\misc.h
 ..\output\main.o: ..\Source\lcd.h
-..\output\main.o: ..\Source\pwm_inputcapture.h
+..\output\main.o: ..\Source\pwm_ic.h
 ..\output\main.o: ..\Source\config.h
 ..\output\main.o: F:\KEIL4\ARM\ARMCC\Bin\..\include\stdio.h

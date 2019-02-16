@@ -238,8 +238,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\Source\pwm_inputcapture.c</PathWithFileName>
-      <FilenameWithoutPath>pwm_inputcapture.c</FilenameWithoutPath>
+      <PathWithFileName>..\Source\pwm_ic.c</PathWithFileName>
+      <FilenameWithoutPath>pwm_ic.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

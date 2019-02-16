@@ -141,6 +141,7 @@ __IO uint16_t CaptureNumber = 0;
 __IO uint32_t Capture = 0;
 __IO uint32_t TIM3Freq = 0;
 
+u8 flagFreq = 0;
 
 void TIM3_IRQHandler(void)
 { 
@@ -169,7 +170,9 @@ void TIM3_IRQHandler(void)
         Capture = ((0xFFFF - IC2ReadValue1) + IC2ReadValue2); 
       }
       /* Frequency computation */ 
-      TIM3Freq = (uint32_t) SystemCoreClock / Capture;
+      TIM3Freq = 1000000 / Capture;//注意这里是72M频率72分频之后的值
+	  
+	  flagFreq = 1;
       CaptureNumber = 0;
     }
   }

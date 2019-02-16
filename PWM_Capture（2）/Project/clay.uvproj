@@ -435,9 +435,9 @@
               <FilePath>..\Source\lcd.c</FilePath>
             </File>
             <File>
-              <FileName>pwm_inputcapture.c</FileName>
+              <FileName>pwm_ic.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source\pwm_inputcapture.c</FilePath>
+              <FilePath>..\Source\pwm_ic.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -4,7 +4,7 @@
 
 #include "stm32f10x.h"
 #include "lcd.h"
-#include "pwm_inputcapture.h"
+#include "pwm_ic.h"
 #include "stdio.h"
 
 #endif
