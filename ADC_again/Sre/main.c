@@ -48,8 +48,8 @@ int main(void)
 	
 	while(1)
 	{
-		dat_ADC = Get_ADC();
-		sprintf((char *)str, "ADC = %.2f V", dat_ADC * 3.3 / 4096);
+		dat_ADC = Get_ADC();//获取ADC转换结果
+		sprintf((char *)str, "ADC = %.2f V", dat_ADC * 3.3 / 4096);//12位ADC对3.3V量化
 		LCD_DisplayStringLine(Line2, str);
 		Delay_Ms(500);
 	}
