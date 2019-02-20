@@ -18,7 +18,7 @@ void LED_Init(void)
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOC, &GPIO_InitStructure);
 	
-	GPIOD->ODR |= (1<<2);//使能573
 	GPIOC->ODR |= 0xFF00;//初始状态熄灭小灯
-	GPIOD->ODR &= (1<<2);//失能573
+	GPIOD->ODR |= (1<<2);//使能573
+	GPIOD->ODR &= ~(1<<2);//失能573
 }

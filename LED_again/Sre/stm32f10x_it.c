@@ -274,9 +274,10 @@ void TIM4_IRQHandler(void)
 	{
 		TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
 		
-		GPIOD->ODR |= (1<<2);//使能573
+		
 		GPIOC->ODR ^= (1<<8);//PC8不断取反达到闪烁效果
-		GPIOD->ODR &= (1<<2);//失能573
+		GPIOD->ODR |= (1<<2);//使能573
+		GPIOD->ODR &= ~(1<<2);//失能573
 	}
 }
 

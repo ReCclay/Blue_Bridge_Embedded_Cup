@@ -729,7 +729,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4FCEEA26)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4FCEEA26)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FCEEA26)
 I (..\Inc\fonts.h)(0x4FCF5AA4)
-F (..\Sre\main.c)(0x5C6B580C)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Inc -I ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\Libraries\CMSIS\CM3\CoreSupport-IF:\KEIL4\ARM\RV31\INC-IF:\KEIL4\ARM\CMSIS\Include-IF:\KEIL4\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D_1010MODE-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
+F (..\Sre\main.c)(0x5C6B595B)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Inc -I ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\Libraries\CMSIS\CM3\CoreSupport-IF:\KEIL4\ARM\RV31\INC-IF:\KEIL4\ARM\CMSIS\Include-IF:\KEIL4\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D_1010MODE-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4FCF2276)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FCEEA26)
 I (F:\KEIL4\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -770,7 +770,7 @@ I (..\Inc\pwm_oc.h)(0x5C6A8B91)
 I (..\Inc\pwm_ic.h)(0x5C6B495C)
 I (..\Inc\timer.h)(0x5C6B50A3)
 I (..\Inc\led.h)(0x5C6B55E5)
-F (..\Sre\stm32f10x_it.c)(0x5C6B584F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Inc -I ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\Libraries\CMSIS\CM3\CoreSupport-IF:\KEIL4\ARM\RV31\INC-IF:\KEIL4\ARM\CMSIS\Include-IF:\KEIL4\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D_1010MODE-o ..\output\stm32f10x_it.o --omf_browse ..\output\stm32f10x_it.crf --depend ..\output\stm32f10x_it.d)
+F (..\Sre\stm32f10x_it.c)(0x5C6CCFF3)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Inc -I ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\Libraries\CMSIS\CM3\CoreSupport-IF:\KEIL4\ARM\RV31\INC-IF:\KEIL4\ARM\CMSIS\Include-IF:\KEIL4\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D_1010MODE-o ..\output\stm32f10x_it.o --omf_browse ..\output\stm32f10x_it.crf --depend ..\output\stm32f10x_it.d)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4FCF2276)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FCEEA26)
 I (F:\KEIL4\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -1033,7 +1033,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4FCEEA26)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4FCEEA26)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4FCEEA26)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4FCEEA26)
-F (..\Sre\led.c)(0x5C6B5854)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Inc -I ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\Libraries\CMSIS\CM3\CoreSupport-IF:\KEIL4\ARM\RV31\INC-IF:\KEIL4\ARM\CMSIS\Include-IF:\KEIL4\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D_1010MODE-o ..\output\led.o --omf_browse ..\output\led.crf --depend ..\output\led.d)
+F (..\Sre\led.c)(0x5C6CCFE4)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Inc -I ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\Libraries\CMSIS\CM3\CoreSupport-IF:\KEIL4\ARM\RV31\INC-IF:\KEIL4\ARM\CMSIS\Include-IF:\KEIL4\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D_1010MODE-o ..\output\led.o --omf_browse ..\output\led.crf --depend ..\output\led.d)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4FCF2276)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4FCEEA26)
 I (F:\KEIL4\ARM\ARMCC\include\stdint.h)(0x588B8344)
