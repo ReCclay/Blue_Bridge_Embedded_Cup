@@ -6,8 +6,9 @@
 * 日  期: 2019年2月20日-2019年2月22日
 * 备  注：修改后的LCD例程
 *         2017_第八届_蓝桥杯_省赛_温湿度监控设备
-*		  加入按键时伴随的蜂鸣器声音
-*		  加入长按键可连续加减
+*		  实现题设所有功能
+*		  附加：加入按键时伴随的蜂鸣器声音
+*		  		加入长按键可连续加减
 *******************************************************************************
 */
 
@@ -129,7 +130,7 @@ int main(void)
 			{
 				ShowSetDat();//参数设置界面
 			}
-			ShowLedThre();//LED1和LED3对温度和湿度的阈值检测
+			ShowLedThre();//LED1和LED3对温度和湿度的阈值检测 要注意在设置界面下，不要让设置的阈值实时生效，也就是说实时值是和Buf的值进行比较的。
 		}
 		
 		if(RxdOver)//接收到以含有\n的字符串
@@ -190,7 +191,7 @@ void WriteE2Dta(void)
 
 void ShowLedThre(void)//LED在温度和湿度超过阈值后的相应状态 200ms扫一次
 {
-	if(Temp > TempThre)//L1
+	if(Temp > TempThre_Buf)//L1 注意是与Buf值比较
 	{
 		LED_MODE ^= (1<<8);
 	}
@@ -199,7 +200,7 @@ void ShowLedThre(void)//LED在温度和湿度超过阈值后的相应状态 200ms扫一次
 		LED_MODE |= (1<<8);
 	}
 	
-	if(Humi > HumiThre)//L2
+	if(Humi > HumiThre_Buf)//L2 注意是与Buf值比较
 	{
 		LED_MODE ^= (1<<9);
 	}
