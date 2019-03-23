@@ -1,0 +1,13 @@
+--cpu Cortex-M3
+"..\output\startup_stm32f10x_md.o"
+"..\output\core_cm3.o"
+"..\output\system_stm32f10x.o"
+"..\output\stm32f10x_gpio.o"
+"..\output\stm32f10x_rcc.o"
+"..\output\lcd.o"
+"..\output\main.o"
+"..\output\stm32f10x_it.o"
+--strict --scatter "..\Output\CT117E-LCD.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\CT117E-LCD.map" -o ..\Output\CT117E-LCD.axf
